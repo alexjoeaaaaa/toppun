@@ -1,0 +1,30 @@
+# Local secrets and machine-specific config. Commit only the *.example files.
+config.local.php
+db.php
+doc/db.php
+fed5.php
+連線命令.txt
+tools/sync.local.json
+
+# Hosting / backup leftovers
+.ftpquota
+*.sql
+backup_*.sql
+
+# Editor / OS
+_pgbackup/
+_pginfo/
+pinegrow.json
+projectdb.pgml
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Local layout checks
+_footer-texture-check.html
+_store-check.html

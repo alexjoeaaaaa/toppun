@@ -1,0 +1,14 @@
+---
+pid: 25308
+cwd: "E:\文件\VANACANDLES"
+command: "$paths = @(
+  \"$env:LOCALAPPDATA\\LINE\\bin\\LINE.exe\",
+  \"$env:ProgramFiles\\LINE\\LINE.exe\",
+  \"${env:ProgramFiles(x86)}\\LINE\\LINE.exe\"
+); $found = $paths | Where-Object { Test-Path $_ } | Select-Object -First 1; if ($found) { Start-Process $found; Write-Output \"Launched: $found\" } else { Get-ChildItem -Path \"$env:LOCALAPPDATA\",\"$env:ProgramFiles\",\"${env:ProgramFiles(x86)}\" -Filter \"LINE.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName }"
+started_at: 2026-06-15T03:08:05.737Z
+running_for_ms: 7189965  
+---
+C:\Users\joefx\AppData\Local\LINE\bin\7.5.0.2664\LINE.exe
+C:\Users\joefx\AppData\Local\LINE\bin\current\LINE.exe
+C:\Users\joefx\AppData\Local\LINE\bin\old\LINE.exe

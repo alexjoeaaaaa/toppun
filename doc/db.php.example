@@ -1,0 +1,15 @@
+<?php
+// 複製成 doc/db.php 後填入遠端資料庫帳密。doc/db.php 不要提交。
+$host = '';
+$dbname = '';
+$username = '';
+$password = '';
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("資料庫連線失敗: " . $e->getMessage());
+}
+
+require_once __DIR__ . '/helpers.php';

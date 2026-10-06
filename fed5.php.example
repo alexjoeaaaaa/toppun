@@ -1,0 +1,221 @@
+<?php
+// 範例檔。複製成 fed5.php 後再填入金鑰與資料庫密碼。fed5.php 不要提交。
+// Secret Key for Authentication - PLEASE CHANGE THIS to a secure password
+define('BRIDGE_SECRET_KEY', '');
+
+// Database credentials
+$dbname = '';
+$username = '';
+$password = '';
+
+// Reusable function to backup and send email
+function backup_and_email($pdo, $dbname, $connected_host) {
+    try {
+        // Generate SQL
+        $sql = "-- System Data Dump\n";
+        $sql .= "-- Generated on " . date('Y-m-d H:i:s') . "\n\n";
+        $sql .= "SET FOREIGN_KEY_CHECKS=0;\n\n";
+
+        // Get all tables
+        $stmt = $pdo->query("SHOW TABLES");
+        $tables = $stmt->fetchAll(PDO::FETCH_COLUMN);
+
+        foreach ($tables as $table) {
+            $sql .= "DROP TABLE IF EXISTS `$table`;\n";
+            
+            $createStmt = $pdo->query("SHOW CREATE TABLE `$table`")->fetch();
+            $sql .= $createStmt['Create Table'] . ";\n\n";
+
+            $dataStmt = $pdo->query("SELECT * FROM `$table`");
+            $rows = $dataStmt->fetchAll(PDO::FETCH_ASSOC);
+
+            if (count($rows) > 0) {
+                $sql .= "INSERT INTO `$table` (";
+                $cols = array_keys($rows[0]);
+                $sql .= implode(', ', array_map(function($c) { return '`' . $c . '`'; }, $cols));
+                $sql .= ") VALUES\n";
+
+                $values = [];
+                foreach ($rows as $row) {
+                    $rowVals = [];
+                    foreach ($row as $val) {
+                        if ($val === null) {
+                            $rowVals[] = 'NULL';
+                        } else {
+                            $rowVals[] = $pdo->quote($val);
+                        }
+                    }
+                    $values[] = "(" . implode(', ', $rowVals) . ")";
+                }
+                $sql .= implode(",\n", $values) . ";\n";
+            }
+            $sql .= "\n\n";
+        }
+        $sql .= "SET FOREIGN_KEY_CHECKS=1;\n";
+
+        // Email settings
+        $to = 'joefxinspire@gmail.com';
+        $subject = 'System Backup - ' . date('Y-m-d H:i:s');
+        $filename = 'backup_' . date('Ymd_His') . '.sql';
+
+        $message_body = "<h3>系統備份成功</h3>";
+        $message_body .= "<p><b>備份時間：</b>" . date('Y-m-d H:i:s') . "</p>";
+        $message_body .= "<p>備份的資料檔案已作為附件寄送。此檔案包含所有資料結構與完整內容。</p>";
+
+        // Send Email
+        $boundary = md5(time());
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .= "From: System Backup <noreply@" . $_SERVER['HTTP_HOST'] . ">\r\n";
+        $headers .= "Reply-To: noreply@" . $_SERVER['HTTP_HOST'] . "\r\n";
+        $headers .= "Content-Type: multipart/mixed; boundary=\"" . $boundary . "\"\r\n";
+
+        $body = "--" . $boundary . "\r\n";
+        $body .= "Content-Type: text/html; charset=utf-8\r\n";
+        $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+        $body .= $message_body . "\r\n\r\n";
+
+        $encoded_file = chunk_split(base64_encode($sql), 76, "\r\n");
+        $body .= "--" . $boundary . "\r\n";
+        $body .= "Content-Type: application/octet-stream; name=\"" . $filename . "\"\r\n";
+        $body .= "Content-Description: System Backup SQL File\r\n";
+        $body .= "Content-Disposition: attachment; filename=\"" . $filename . "\"; size=" . strlen($sql) . ";\r\n";
+        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+        $body .= $encoded_file . "\r\n\r\n";
+        $body .= "--" . $boundary . "--";
+
+        return mail($to, $subject, $body, $headers);
+    } catch (Exception $e) {
+        return false;
+    }
+}
+
+// 1. If it is a POST request, run as the secure DB query bridge
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+    header('Content-Type: application/json; charset=utf-8');
+
+    // Parse Input (support both raw JSON and form data)
+    $input_key = isset($_POST['key']) ? $_POST['key'] : '';
+    $sql = isset($_POST['query']) ? $_POST['query'] : '';
+    $params = isset($_POST['params']) ? $_POST['params'] : [];
+
+    if (empty($input_key) || empty($sql)) {
+        // Try reading JSON input
+        $raw_input = file_get_contents('php://input');
+        $json_data = json_decode($raw_input, true);
+        if (is_array($json_data)) {
+            $input_key = isset($json_data['key']) ? $json_data['key'] : '';
+            $sql = isset($json_data['query']) ? $json_data['query'] : '';
+            $params = isset($json_data['params']) ? $json_data['params'] : [];
+        }
+    }
+
+    // Decode params if sent as a JSON string
+    if (is_string($params)) {
+        $decoded = json_decode($params, true);
+        if (is_array($decoded)) {
+            $params = $decoded;
+        } else {
+            $params = [];
+        }
+    }
+
+    // Verify Key
+    if ($input_key !== BRIDGE_SECRET_KEY) {
+        http_response_code(403);
+        echo json_encode(['success' => false, 'message' => 'Unauthorized. Invalid secret key.']);
+        exit;
+    }
+
+    // Connect to Database
+    $hosts = ['localhost', 'www.fxinspire.com'];
+    $pdo = null;
+    $connected_host = '';
+    $connection_error = '';
+
+    foreach ($hosts as $host) {
+        try {
+            $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
+            $options = [
+                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES   => false,
+            ];
+            $pdo = new PDO($dsn, $username, $password, $options);
+            $connected_host = $host;
+            break;
+        } catch (\PDOException $e) {
+            $connection_error = $e->getMessage();
+        }
+    }
+
+    if (!$pdo) {
+        http_response_code(500);
+        echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . $connection_error]);
+        exit;
+    }
+
+    // Execute Query
+    try {
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute($params);
+
+        $is_select = preg_match('/^\s*(select|show|describe|explain)/i', $sql);
+
+        if ($is_select) {
+            $results = $stmt->fetchAll();
+            echo json_encode([
+                'success' => true,
+                'host' => $connected_host,
+                'row_count' => count($results),
+                'data' => $results
+            ]);
+        } else {
+            echo json_encode([
+                'success' => true,
+                'host' => $connected_host,
+                'affected_rows' => $stmt->rowCount(),
+                'last_insert_id' => $pdo->lastInsertId()
+            ]);
+        }
+    } catch (\PDOException $e) {
+        http_response_code(400);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Query error: ' . $e->getMessage(),
+            'sqlstate' => $e->getCode()
+        ]);
+    }
+    exit;
+}
+
+// 2. Otherwise (GET/etc.), run connection silently and send email in background (No Output)
+error_reporting(0);
+ini_set('display_errors', 0);
+
+$hosts = ['localhost', 'www.fxinspire.com'];
+$pdo = null;
+$connected_host = '';
+
+foreach ($hosts as $host) {
+    try {
+        $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
+        $options = [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+        ];
+        $pdo = new PDO($dsn, $username, $password, $options);
+        $connected_host = $host;
+        break;
+    } catch (\PDOException $e) {
+        // Silent failure
+    }
+}
+
+if ($pdo) {
+    // Silently run backup and send email in background
+    backup_and_email($pdo, $dbname, $connected_host);
+}
+?>

@@ -1,0 +1,9 @@
+{
+  "host": "www.fxinspire.com",
+  "port": 21,
+  "user": "mcandle@mcandle.fxinspire.com",
+  "password": "YOUR_FTP_PASSWORD",
+  "remote_dir": "/",
+  "tls": true,
+  "local_dir": "E:\\文件\\VANACANDLES"
+}

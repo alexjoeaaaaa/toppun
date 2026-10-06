@@ -1,0 +1,3 @@
+<?php
+// 複製成 config.local.php 後填入金鑰。config.local.php 不要提交。
+define('UPLOAD_SECRET', '');

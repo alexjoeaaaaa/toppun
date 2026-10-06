@@ -1,0 +1,450 @@
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+
+... (output truncated) ...
+
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 
+�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC
+��� �u��:20 �r��:3
++   $pid = 0
++   ~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+�H "2" �޼ƩI�s "GetWindowThreadProcessId" �ɵo�ͨҥ~���p: "�L�k�мg PID �ܼơA�]�����O��Ū�α`�ơC"
+��� �u��:21 �r��:3
++   [void][WinShow]::GetWindowThreadProcessId($h, [ref]$pid)
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : SessionStateUnauthorizedAccessException
+ 

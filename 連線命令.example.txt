@@ -1,0 +1,27 @@
+# 本機 / 遠端工作流程
+# 本機請開（不要再開 https://127.0.0.1:8081/）：
+#   http://127.0.0.1/
+#   https://127.0.0.1/     （第一次會出現憑證警告，選進階 → 繼續前往）
+# 遠端：https://mcandle.fxinspire.com/  （全站強制 HTTPS）
+# 雙擊 本機開啟.bat 也可。
+# XAMPP Admin 若仍開 :8081，改到控制台右上 Config → Service and Port Settings
+# 把 Apache Main Port 改成 80 後存檔並重開控制台。
+#
+# 上傳本機 -> 遠端：
+#   python tools/sync.py up
+#   python tools/sync.py up helpers.php
+#   或雙擊 upload.bat
+#
+# 下載遠端 -> 本機：
+#   python tools/sync.py down
+#   python tools/sync.py down assets/images
+#   或雙擊 download.bat
+#
+# 先預覽不傳檔：
+#   python tools/sync.py status
+#
+# 兩邊的 db.php 不會互蓋。也可用 FileZilla 站台「新站台 3」。
+
+# 遠端資料庫連線備忘
+# 橋接網址、安全金鑰、資料庫密碼只寫在本機的 連線命令.txt。
+# 該檔已列入 .gitignore，不要提交，也不要貼到對話裡。

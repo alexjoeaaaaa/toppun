@@ -1,0 +1,40 @@
+---
+pid: 27316
+cwd: "E:\文件\VANACANDLES"
+command: "Add-Type -AssemblyName System.Windows.Forms
+Add-Type @\"
+using System; using System.Runtime.InteropServices;
+public class M {
+  [DllImport(\"user32.dll\")] public static extern bool SetCursorPos(int X, int Y);
+  [DllImport(\"user32.dll\")] public static extern void mouse_event(uint f, uint dx, uint dy, uint d, UIntPtr e);
+  [DllImport(\"user32.dll\")] public static extern bool SetForegroundWindow(IntPtr h);
+  [DllImport(\"user32.dll\")] public static extern bool ShowWindow(IntPtr h, int n);
+  public const uint LDOWN=2, LUP=4;
+  public static void Click(int x,int y){ SetCursorPos(x,y); System.Threading.Thread.Sleep(80); mouse_event(LDOWN,0,0,0,UIntPtr.Zero); mouse_event(LUP,0,0,0,UIntPtr.Zero);} }
+\"@
+$p = Get-Process -Name LINE | Select-Object -First 1
+[void][M]::ShowWindow($p.MainWindowHandle,5)
+[void][M]::SetForegroundWindow($p.MainWindowHandle)
+Start-Sleep -Milliseconds 500
+# Click Keep icon (4th in left nav)
+[M]::Click(431, 373)
+Start-Sleep -Seconds 2
+Add-Type -AssemblyName System.Drawing
+Add-Type @\"
+using System; using System.Runtime.InteropServices;
+public class WR2 { [DllImport(\"user32.dll\")] public static extern bool GetWindowRect(IntPtr h, out RECT r);
+ [StructLayout(LayoutKind.Sequential)] public struct RECT { public int L,T,R,B; } }
+\"@
+$r=New-Object WR2+RECT; [void][WR2]::GetWindowRect($p.MainWindowHandle,[ref]$r)
+$w=$r.R-$r.L; $h=$r.B-$r.T
+$bmp=New-Object System.Drawing.Bitmap $w,$h
+$g=[System.Drawing.Graphics]::FromImage($bmp)
+$g.CopyFromScreen($r.L,$r.T,0,0,(New-Object System.Drawing.Size $w,$h))
+$path='E:\\文件\\VANACANDLES\\line_keep.png'
+$bmp.Save($path,[System.Drawing.Imaging.ImageFormat]::Png)
+$g.Dispose();$bmp.Dispose()
+'clicked keep, saved line_keep.png'"
+started_at: 2026-06-15T03:37:47.316Z
+running_for_ms: 5424973  
+---
+clicked keep, saved line_keep.png

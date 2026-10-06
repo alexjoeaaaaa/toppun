@@ -1,0 +1,66 @@
+RewriteEngine On
+RewriteBase /
+
+# ======================
+# 0. 遠端全站強制 HTTPS（本機 localhost / 127.0.0.1 不轉）
+# ======================
+RewriteCond %{HTTP_HOST} ^(www\.)?mcandle\.fxinspire\.com$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://mcandle.fxinspire.com%{REQUEST_URI} [R=301,L]
+
+# ======================
+# 1. 隱藏 .php 副檔名（最重要）
+# ======================
+
+# 如果使用者輸入不帶 .php 的網址，自動執行對應的 .php 檔案
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+# 如果直接輸入 xxx.php，強制跳轉成乾淨網址
+# 使用 302 避免瀏覽器永久快取造成問題
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=302,L]
+
+
+# ======================
+# 3. 商品詳情、分類列表與全網商品網址重寫 (SEO 友善網址)
+# ======================
+# 排除真實存在的檔案與目錄
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# 排除系統資料夾開頭的請求以確保不影響後台與 API
+RewriteCond %{REQUEST_URI} !^/(api|admin|assets|view|tools|doc|agent-tools)/ [NC]
+# A0. 匹配：/全部分類/分類名稱/商品ID（或 商品ID-後綴）
+RewriteRule ^(?:全部分類|%E5%85%A8%E9%83%A8%E5%88%86%E9%A1%9E)/([^/]+)/([0-9]+)(?:-[^/]*)?/?$ /product-detail.php?category_name=$1&id=$2 [QSA,L]
+
+# A. 匹配：/全部分類/分類名稱/商品名稱
+RewriteRule ^(?:全部分類|%E5%85%A8%E9%83%A8%E5%88%86%E9%A1%9E)/([^/]+)/([^/]+)/?$ /product-detail.php?category_name=$1&name=$2 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/(api|admin|assets|view|tools|doc|agent-tools)/ [NC]
+# B. 匹配：/全部分類/分類名稱
+RewriteRule ^(?:全部分類|%E5%85%A8%E9%83%A8%E5%88%86%E9%A1%9E)/([^/]+)/?$ /product-list.php?category_name=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/(api|admin|assets|view|tools|doc|agent-tools)/ [NC]
+# C. 匹配：/全部分類
+RewriteRule ^(?:全部分類|%E5%85%A8%E9%83%A8%E5%88%86%E9%A1%9E)/?$ /product-list.php [QSA,L]
+
+
+# ======================
+# 2. 你的 IP 封鎖（新語法，避免衝突）
+# ======================
+<Files 403.shtml>
+    Require all granted
+</Files>
+
+<RequireAll>
+    Require all granted
+    Require not ip 43.134.137.151
+    Require not ip 45.124.84.150
+</RequireAll>
