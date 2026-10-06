@@ -25,6 +25,8 @@ desktop.ini
 .vscode/
 *.swp
 
-# Local layout checks
+# Local layout checks and agent logs
 _footer-texture-check.html
 _store-check.html
+agent-tools/
+terminals/
